@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A premium romantic anniversary website for Krishna and Aayushi."
+    />
+    <meta name="theme-color" content="#160817" />
+    <title>Happy 2 Years Aayushi | Krishna ❤️ Aayushi</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <canvas id="sparkCanvas" aria-hidden="true"></canvas>
+
+    <div class="loader" id="loader">
+      <div class="loader-heart">❤️</div>
+      <p>Preparing Something Special...</p>
+    </div>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle romantic music">
+      <span class="music-icon">♪</span>
+    </button>
+
+    <main>
+      <section class="welcome section-full" id="welcome">
+        <div class="hero-slideshow" aria-hidden="true">
+          <picture>
+            <source srcset="images/memory-3.webp" type="image/webp" />
+            <img src="images/memory-3.jpg" alt="" />
+          </picture>
+          <picture>
+            <source srcset="images/memory-5.webp" type="image/webp" />
+            <img src="images/memory-5.jpg" alt="" />
+          </picture>
+          <picture>
+            <source srcset="images/memory-2.webp" type="image/webp" />
+            <img src="images/memory-2.jpg" alt="" />
+          </picture>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="stars" aria-hidden="true"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">Krishna ❤️ Aayushi</p>
+          <h1>Happy 2 Years Aayushi ❤️</h1>
+          <p class="hero-subtitle">9 July 2024 → Forever</p>
+          <button class="start-button" type="button" data-scroll="#timeline">
+            Start This Little Surprise
+          </button>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Humari kahani</p>
+          <h2>Thoda drama, thoda pyaar, aur bohot saari memories.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <span>01</span>
+            <h3>First Hello ❤️</h3>
+            <p>Tune he fist hello bheja tha voh kaluve ki wajhese.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>02</span>
+            <h3>Late Night Chats 🌙</h3>
+            <p>yeh toh jada hota nhi yrr kyuki meko nind aajati hehe.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>03</span>
+            <h3>Our First Picture 📸</h3>
+            <p>dekh usme bohot memories hai likha hai mein ne book pe.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>04</span>
+            <h3>Every Fight Made Us Stronger 💕</h3>
+            <p>Dono bohot lade apan pr kisine kisko nhi chora.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>05</span>
+            <h3>Long Distance But Same Heart 🌍</h3>
+            <p>Abhi long distance horha apna yaad bohot aayegi yr teri but apna bond aisa he rehna chahiye.</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>06</span>
+            <h3>2 Beautiful Years ❤️</h3>
+            <p>Do saal kaise nikal gaye pata hi nahi chala. Bas itna pata hai, meko aur chahiye.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Favorite frames</p>
+          <h2>Photos jisme hum dono sach mein acche lagte hain.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item tall reveal" type="button" data-full="images/memory-1.webp">
+            <img src="images/memory-1-thumb.webp" alt="Krishna and Aayushi mirror photo" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/memory-2.webp">
+            <img src="images/memory-2-thumb.webp" alt="Krishna and Aayushi making a heart at sunset" loading="lazy" />
+          </button>
+          <button class="gallery-item wide reveal" type="button" data-full="images/memory-3.webp">
+            <img src="images/memory-3-thumb.webp" alt="Krishna and Aayushi by the water" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/memory-4.webp">
+            <img src="images/memory-4-thumb.webp" alt="Krishna and Aayushi holding hands near water" loading="lazy" />
+          </button>
+          <button class="gallery-item tall reveal" type="button" data-full="images/memory-5.webp">
+            <img src="images/memory-5-thumb.webp" alt="Krishna and Aayushi smiling together" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="images/memory-6.webp">
+            <img src="images/memory-6-thumb.webp" alt="Krishna and Aayushi sitting together" loading="lazy" />
+          </button>
+        </div>
+      </section>
+
+      <section class="section counter-section" id="counter">
+        <div class="glass-panel reveal">
+          <p class="eyebrow">Since 9 July 2024</p>
+          <h2>Itna time ho gaya, aur phir bhi tumhari notification pe smile aa hi jaati hai.</h2>
+          <div class="counter-grid" id="loveCounter">
+            <div><strong data-unit="years">0</strong><span>Years</span></div>
+            <div><strong data-unit="months">0</strong><span>Months</span></div>
+            <div><strong data-unit="days">0</strong><span>Days</span></div>
+            <div><strong data-unit="hours">0</strong><span>Hours</span></div>
+            <div><strong data-unit="minutes">0</strong><span>Minutes</span></div>
+            <div><strong data-unit="seconds">0</strong><span>Seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <article class="love-letter reveal">
+          <p class="eyebrow">Ek chhota sa letter</p>
+          <h2>Aayushi, yeh sirf anniversary wish nahi hai.</h2>
+          <p>
+            Yrr,i love you so much tu meko itna jhelti uske liye thank you tune meko chapri
+            se aesthetic banaya hehe itne jhagde hone ke baad bhi sath rhi uske liye bhi mtlb 
+            teko jitna thank you bolu utna kam hai.
+          </p>
+          <p>
+            Thank you for staying. Mere mood swings, stupid moments, unnecessary attitude,
+            late replies, aur kabhi kabhi bilkul faltu overthinking ke baad bhi tumne mujhe
+            choose kiya. Sorry for the times jab maine tumhe hurt kiya, jab mujhe better
+            samajhna chahiye tha, aur jab main apni baat properly bol nahi paaya.
+          </p>
+          <p>
+            Dekh teri notification aati toh aaj bhi exited rehta mein utna he tu ekdam safest place hai
+            meri tere sath mein bacche jaise rehta bilkul ekdam sab bhul jata ego attitude wagera hehe
+            i love you so muchhhh...........
+          </p>
+          <p>
+            I still choose you. Aaj bhi, kal bhi, aur har us din bhi jab hum dono thode
+            difficult honge. Thank you for loving me in your own cute, dramatic, caring,
+            thodi si pagal wali way. Mujhe tumhari smile, tumhari voice, tumhara care karna,
+            aur tumhara "haan haan theek hai" bolke bhi sab samajh jaana, sab kuch pasand hai.
+          </p>
+          <p>
+            Happy Anniversary, Motiii. Meko pata nahi future exactly kaisa hoga, par agar tu
+            saath hai, toh meko usse face karne ka mann karta hai.
+          </p>
+          <p class="signature">— Krishna ❤️</p>
+        </article>
+      </section>
+
+      <section class="section reasons-section" id="reasons">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Reasons</p>
+          <h2>Why I love you, short version. Long version toh endless hai.</h2>
+        </div>
+        <div class="reason-grid">
+          <article class="reason-card reveal"><h3>Your smile</h3><p>Teri smile wala dimple aay hayyy.</p></article>
+          <article class="reason-card reveal"><h3>Your care</h3><p>dhyan toh rakhti tuu but mein jada rakhtaa.</p></article>
+          <article class="reason-card reveal"><h3>Your madness</h3><p>Paglii hai tu purii motiiii.</p></article>
+          <article class="reason-card reveal"><h3>The way you understand me</h3><p>Kabhi kabhi bina explain kiye bhi tu samajh jaati.</p></article>
+          <article class="reason-card reveal"><h3>Your voice</h3><p>Besuri hai tu chlll aage badh.</p></article>
+          <article class="reason-card reveal"><h3>Everything about you</h3><p>Suar, Kutti, Hagodi, Shemdi, Bhaiss</p></article>
+        </div>
+      </section>
+
+      <section class="section surprise-section" id="surprise">
+        <div class="surprise-wrap reveal">
+          <p class="eyebrow">Hidden surprise</p>
+          <button class="gift-box" id="giftBox" type="button" aria-label="Open surprise gift">
+            <span class="lid"></span>
+            <span class="box"></span>
+            <span class="ribbon"></span>
+          </button>
+          <div class="surprise-message" id="surpriseMessage" aria-live="polite">
+            <h2>I Love You Aayushi ❤️</h2>
+            <p>Will You Stay With Me Forever?</p>
+            <button type="button">Always ❤️</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ending section-full" id="ending">
+        <div class="stars ending-stars" aria-hidden="true"></div>
+        <div class="ending-content reveal">
+          <p>Every love story is beautiful...</p>
+          <h2>But ours is my favourite.</h2>
+          <h3>Happy 2nd Anniversary</h3>
+          <strong>Krishna ❤️ Aayushi</strong>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img src="" alt="Expanded memory" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
